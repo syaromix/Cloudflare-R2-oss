@@ -8,6 +8,10 @@ defineProps({
     type: String,
     default: "",
   },
+  widthsize: {
+    type: Number,
+    default: 48,
+  },
   size: {
     type: Number,
     default: 36,
@@ -20,7 +24,7 @@ defineProps({
     <img
       v-if="thumbnail"
       :src="thumbnail"
-      :width="size"
+      :width="widthsize"
       :height="size"
       alt="Image"
       loading="lazy"
